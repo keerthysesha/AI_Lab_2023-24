@@ -49,8 +49,8 @@ bfs(visited, graph, '2')
 ### Output:
 
 ```
-BFS order is
-2 3 4 5 6 7 8
+<img width="265" alt="image" src="https://github.com/Surekaelango/AI_Lab_2023-24/assets/127727904/29f17416-69a5-4527-845e-4fff07d0d1ae">
+
 ```
 
 ### Result:
