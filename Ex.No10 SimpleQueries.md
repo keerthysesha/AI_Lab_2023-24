@@ -3,6 +3,7 @@
 ### REGISTER NUMBER : 212221040082
 ### AIM: 
 To write a prolog program to find the answer of query. 
+
 ###  Algorithm:
  Step 1: Start the program <br> 
  Step 2: Convert the sentence into First order Logic  <br> 
@@ -11,6 +12,7 @@ To write a prolog program to find the answer of query.
  Step 5:  Pass the query to program. <br> 
  Step 6: Prolog interpreter shows the output and return answer. <br> 
  Step 8:  Stop the program.
+ 
 ### Program:
 ### Task 1:
 Construct the FOL representation for the following sentences <br> 
@@ -19,7 +21,8 @@ Construct the FOL representation for the following sentences <br>
 3.	Chicken is a food.  <br> 
 4.	Sue eats everything Bill eats. <br> 
 5.	 Bill eats peanuts  <br> 
-   Convert into clause form and Prove that John like Apple by using Prolog. <br> 
+   Convert into clause form and Prove that John like Apple by using Prolog. <br>
+
 ### Program:
 ```
 likes(john,X):-food(X).
@@ -29,6 +32,7 @@ eats(bill,peanuts).
 eats(sue,X):-eats(bill,X).
 alive(bill).
 ```
+
 ### Output:
 
 ![Screenshot 2024-03-23 113353](https://github.com/keerthysesha/AI_Lab_2023-24/assets/125575936/fa75e9ce-69cf-4e14-bacb-a3387324c480)
@@ -42,18 +46,35 @@ Consider the following facts and represent them in predicate form: <br>
 Convert the facts in predicate form to clauses and then prove by resolution: “Steve likes BK301 course”<br> 
 
 ### Program:
-
+```
+likes(steve,X):-easycourses(X). 
+hard(science). 
+havefun(BK301). 
+easycourses(X):- havefun(X). 
+```
 
 ### Output:
+
+![Screenshot 2024-03-31 185934](https://github.com/keerthysesha/AI_Lab_2023-24/assets/125575936/fabf4af8-9991-415e-b287-2934b3ba916b)
 
 ### Task 3:
 Consider the statement <br> 
 “This is a crime for an American to sell weapons to hostile nations. The Nano , enemy of America has some missiles and its missiles were sold it by Colonal West who is an American” <br> 
 Convert to Clause form and prove west is criminal by using Prolog.<br> 
+
 ### Program:
 
+```
+crime(selling_weapons, hostile_nations).
+american(colonel_west).
+has_missiles(nano).
+enemy_of_america(nano).
+sold_by(colonel_west, nano).
+```
 
 ### Output:
+
+![Screenshot 2024-03-31 185524](https://github.com/keerthysesha/AI_Lab_2023-24/assets/125575936/93a129d0-ff40-4488-ac77-a754bc80491b)
 
 ### Result:
 Thus the prolog programs were executed successfully and the answer of query was found.
